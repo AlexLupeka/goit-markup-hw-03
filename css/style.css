@@ -25,6 +25,7 @@
   --first-logo-color: #2196f3;
   --second-logo-color: #000000;
   --third-logo-color: #ffffff;
+  --footer-logo-color: #2196f3;
 
   --oder-button-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   --button-border-radius: 4px;
@@ -223,7 +224,11 @@ img {
   display: flex;
 }
 .benefit-list .benefit-item {
-  flex-basis: auto;
+  width: 270px;
+  margin-right: 30px;
+}
+.benefit-list .benefit-item:last-child {
+  margin-right: 0;
 }
 .benefit-title {
   margin-bottom: 10px;
@@ -301,8 +306,8 @@ img {
   margin-right: 0;
 }
 .img-caption {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .team-subtitle {
   color: var(--primary-text-color);
@@ -330,11 +335,16 @@ img {
 
   background-color: var(--footer-bg-color);
 }
-.logo-third {
-  color: var(--footer-location-color);
-}
 .footer-logo {
-  margin-right: 93px;
+  color: var(--first-logo-color);
+
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo-third {
+  color: var(--third-logo-color);
 }
 .address {
   margin-top: 20px;
@@ -371,7 +381,7 @@ img {
   margin-right: 0;
 }
 .portfolio-button {
-  padding: 8px 22px;
+  padding: 6px 22px;
 
   color: var(--secondary-button-text-color);
   background-color: var(--secondary-button-bg-color);
